@@ -1,10 +1,11 @@
-#
-Task:
-List all privileges of the MySQL users user_0d_1 and user_0d_2 on your server
-(in localhost)
+-- Script to list privileges of MySQL users
 
-# List privileges for user_0d_1
+-- Connect to MySQL server
+mysql
+-u root -p
+
+-- List privileges for user_0d_1
 SHOW GRANTS FOR 'user_0d_1'@'localhost';
 
-# List privileges for user_0d_2
+-- List privileges for user_0d_2
 SHOW GRANTS FOR 'user_0d_2'@'localhost';
